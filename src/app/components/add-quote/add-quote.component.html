@@ -12,11 +12,12 @@
       </div>
       <div class="form-group">
         <textarea
-          name=""
+          name="quoteTyped"
           id="quote"
           cols="30"
           rows="5"
           placeholder="Input Quote"
+          [(ngModel)]="addQuote"
         ></textarea>
       </div>
       <!-- Field for author -->
@@ -29,16 +30,14 @@
         />
       </div>
 
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit Quote</button>
     </form>
   </div>
 
   <!-- Quote Preview Container -->
-  <div class="col-md-6 d-flex justify-content-center align-items-center preview">
-    <p><em>Quote Preview</em></p>
+  <div
+    class="col-md-6 d-flex justify-content-center align-items-center preview"
+  >
+    <p>{{addQuote}}</p>
   </div>
 </div>

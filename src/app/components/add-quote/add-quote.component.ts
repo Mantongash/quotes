@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddQuoteComponent implements OnInit {
 
+  addQuote:string = "Hello";
+
   constructor() { }
 
   ngOnInit() {

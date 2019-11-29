@@ -1,3 +1,9 @@
+/* Style topbar */
+.top-bar {
+  background: coral;
+  height: 10px;
+}
+
 /* Header Styling */
 header {
   text-align: center;
@@ -27,4 +33,3 @@ header p::before {
   background: blue;
   width: 100%;
 }
-

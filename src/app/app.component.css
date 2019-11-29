@@ -1,0 +1,29 @@
+/* Header Styling */
+header {
+  text-align: center;
+  line-height: 1.5;
+  color: coral;
+}
+
+h1 {
+  font-size: 3rem;;
+}
+
+header h1 span {
+  font-weight: 400;
+  color: lightcoral;
+}
+
+header p {
+  font-style: italic;
+  color: blue;
+  font-weight: 900;
+}
+
+header p::before {
+  content: "";
+  height: 2px;
+  background: blue;
+  width: 100%;
+}
+

@@ -3,12 +3,17 @@
     {{ quote.actualQuote }}
   </div>
   <div class="author">- {{ quote.author }}</div>
-  <div class="vote-icons d-flex">
-    <div class="upvote">
-      <i class="fas fa-thumbs-up mx-2"></i>
+  <div class="d-flex justify-content-between">
+    <div class="vote-icons d-flex">
+      <div class="upvote">
+        <i class="fas fa-thumbs-up mx-2"></i>
+      </div>
+      <div class="downvote">
+        <i class="fas fa-thumbs-down mx-2"></i>
+      </div>
     </div>
-    <div class="downvote">
-      <i class="fas fa-thumbs-down mx-2"></i>
+    <div class="details">
+      <a href="#">Details</a>
     </div>
   </div>
 </li>

@@ -24,3 +24,8 @@ body {
 li {
   width: 30%;
 }
+
+.vote-icons {
+  border-top: 1px solid #000;
+  margin-top: 5px;
+}

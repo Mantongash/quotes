@@ -20,3 +20,7 @@ body {
   font-family: "Calistoga";
   font-size: 1.5rem;
 }
+
+li {
+  width: 30%;
+}

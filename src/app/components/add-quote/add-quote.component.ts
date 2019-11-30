@@ -9,6 +9,11 @@ export class AddQuoteComponent implements OnInit {
 
   addQuote:string = "Hello";
 
+  // formatQuote() {
+  //   let quoteToFormat = document.getElementById("quoted");
+  //   quoteToFormat.style.first
+  // }
+
   constructor() { }
 
   ngOnInit() {

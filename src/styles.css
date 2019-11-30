@@ -28,5 +28,15 @@ li {
 .vote-icons {
   border-top: 1px solid #000;
   margin-top: 5px;
-  padding-top:5px;
+  padding-top: 5px;
+}
+
+.upvote {
+  color: green;
+  cursor: pointer;
+}
+
+.downvote {
+  color: red;
+  cursor: pointer;
 }

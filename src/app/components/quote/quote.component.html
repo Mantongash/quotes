@@ -1,5 +1,8 @@
 <li class="card p-3 m-3 d-inline-block" *ngFor="let quote of quotes">
-  {{ quote.actualQuote }}
+  <div>
+    {{ quote.actualQuote }}
+  </div>
+  <div class="author">- {{ quote.author }}</div>
   <div class="vote-icons d-flex">
     <div class="upvote">
       <i class="fas fa-thumbs-up mx-2"></i>

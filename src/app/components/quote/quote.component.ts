@@ -9,9 +9,13 @@ import { Quote } from "../quote";
 export class QuoteComponent implements OnInit {
   @Input() quote: Quote;
   @Input() showDetails: boolean;
+  linkName: string = "Show Details";
 
   toggleDetails() {
     this.showDetails = !this.showDetails;
+    this.showDetails
+      ? (this.linkName = "Hide Details")
+      : (this.linkName = "Show Details");
   }
   constructor() {}
 

@@ -7,8 +7,12 @@ import { Quote } from "../quote";
   styleUrls: ["./quote.component.css"]
 })
 export class QuoteComponent implements OnInit {
+  @Input() quote: Quote;
+  @Input() showDetails: boolean;
 
-@Input() quote: Quote;
+  toggleDetails() {
+    this.showDetails = !this.showDetails;
+  }
   constructor() {}
 
   ngOnInit() {}

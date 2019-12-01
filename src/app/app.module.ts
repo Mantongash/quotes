@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { AddQuoteComponent } from './components/add-quote/add-quote.component';
 import { QuotesComponent } from './components/quotes/quotes.component';
 import { QuoteComponent } from './components/quote/quote.component';
-import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteDetailsComponent } from '../app/components/quote-details/quote-details.component';
 
 @NgModule({
   declarations: [

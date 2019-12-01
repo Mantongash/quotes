@@ -64,3 +64,7 @@ app-quote {
 .fa-times-circle:hover {
   color: red;
 }
+
+.details {
+  text-align: right;
+}

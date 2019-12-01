@@ -1,6 +1,7 @@
 export class Quote {
-  name: string;
-  actualQuote: string;
-  author:string;
-  postedBy:string;
+  constructor(
+    public actualQuote: string,
+    public author: string,
+    public postedBy: string
+  ) {}
 }

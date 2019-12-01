@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Quote } from "../quote";
 
 @Component({
@@ -16,6 +16,10 @@ export class QuoteComponent implements OnInit {
     this.showDetails
       ? (this.linkName = "Hide Details")
       : (this.linkName = "Show Details");
+  }
+
+  deleteQuote() {
+    console.log("Deleted");
   }
   constructor() {}
 

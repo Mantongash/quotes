@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-6">
-    <form>
+    <form #submitQuote="ngForm" (ngSubmit)="submittedQuote()">
       <!-- Field for your name -->
       <div class="form-group">
         <input
@@ -8,7 +8,17 @@
           class="form-control"
           id="name"
           placeholder="Enter your name"
+          [(ngModel)]="newQuote.postedBy"
+          name="postedBy"
+          #postedBy="ngModel"
+          required
         />
+        <div
+          [hidden]="postedBy.valid || postedBy.pristine"
+          class="alert alert-danger"
+        >
+          <p>Name is required</p>
+        </div>
       </div>
       <div class="form-group">
         <textarea
@@ -17,8 +27,17 @@
           cols="30"
           rows="5"
           placeholder="Input Quote"
-          [(ngModel)]="addQuote"
+          [(ngModel)]="newQuote.actualQuote"
+          name="actualQuote"
+          #actualQuote="ngModel"
+          required
         ></textarea>
+        <div
+          [hidden]="actualQuote.valid || actualQuote.pristine"
+          class="alert alert-danger"
+        >
+          <p>Quote is required</p>
+        </div>
       </div>
       <!-- Field for author -->
       <div class="form-group">
@@ -27,17 +46,28 @@
           class="form-control"
           id="author"
           placeholder="Enter Author"
+          [(ngModel)]="newQuote.author"
+          name="author"
+          #author="ngModel"
+          required
         />
+        <div
+          [hidden]="author.valid || author.pristine"
+          class="alert alert-danger"
+        >
+          <p>Author is required</p>
+        </div>
       </div>
 
       <button type="submit" class="btn btn-primary">Submit Quote</button>
     </form>
+    {{ newQuote.name }}
   </div>
 
   <!-- Quote Preview Container -->
   <div
     class="col-md-6 d-flex justify-content-center align-items-center preview"
   >
-    <p id="quoted">{{addQuote}}</p>
+    <p id="quoted">{{ newQuote.quote }}</p>
   </div>
 </div>

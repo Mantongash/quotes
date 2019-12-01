@@ -22,10 +22,15 @@ body {
 }
 
 li {
-  width: 30%;
+  width: 100%;
+  position: relative;
 }
 
-.vote-icons {
+app-quote {
+  width: 350px;
+}
+
+.quote-stats {
   border-top: 1px solid #000;
   margin-top: 5px;
   padding-top: 5px;
@@ -46,4 +51,16 @@ li {
   font-weight: 700;
   font-style: italic;
   color: navy;
+}
+
+/* Delete button */
+.fa-times-circle {
+  position: relative;
+  left: 95%;
+  top: 3%;
+  cursor: pointer;
+}
+
+.fa-times-circle:hover {
+  color: red;
 }

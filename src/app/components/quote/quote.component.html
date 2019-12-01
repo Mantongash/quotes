@@ -1,5 +1,9 @@
-<li class="card p-3 m-3 d-inline-block" *ngFor="let quote of quotes">
+<li class="card p-2 m-2">
   <div>
+    <div class="button">
+      <i class="fas fa-times-circle"></i>
+    </div>
+
     {{ quote.actualQuote }}
   </div>
   <div class="author">- {{ quote.author }}</div>

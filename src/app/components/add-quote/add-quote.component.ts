@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter, Input } from "@angular/core";
 import { Quote } from "../quote";
 
 @Component({
@@ -11,9 +11,11 @@ export class AddQuoteComponent implements OnInit {
 
   newQuote = new Quote("", "", "");
   @Output() addedQuote = new EventEmitter<Quote>();
+  // @Output() submitQuote: any;
 
   submittedQuote() {
     this.addedQuote.emit(this.newQuote);
+    // this.submitQuote.reset()
   }
   // formatQuote() {
   //   let quoteToFormat = document.getElementById("quoted");

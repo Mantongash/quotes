@@ -11,7 +11,7 @@ export class AddQuoteComponent implements OnInit {
 
   newQuote = new Quote("", "", "");
   @Output() addedQuote = new EventEmitter<Quote>();
-  // @Output() submitQuote: any;
+  @Output() submitQuote: any;
 
   submittedQuote() {
     this.addedQuote.emit(this.newQuote);

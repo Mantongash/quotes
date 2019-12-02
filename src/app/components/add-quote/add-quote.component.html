@@ -67,6 +67,10 @@
   <div
     class="col-md-6 d-flex justify-content-center align-items-center preview"
   >
-    <p id="quoted">{{ newQuote.actualQuote }}</p>
+    <div id="quoted">
+      <div><i class="fas fa-quote-left"></i></div>
+      {{ newQuote.actualQuote }}
+      <div class="text-right"><i class="fas fa-quote-right"></i></div>
+    </div>
   </div>
 </div>

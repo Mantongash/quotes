@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Quote } from "../quote";
-import { ConditionalExpr } from "@angular/compiler";
+// import { ConditionalExpr } from "@angular/compiler";
 
 @Component({
   selector: "app-quotes",
@@ -35,7 +35,6 @@ export class QuotesComponent implements OnInit {
 
   addNewQuote(quote) {
     this.quotes.push(quote);
-    console.log(this.quotes);
   }
 
   constructor() {}

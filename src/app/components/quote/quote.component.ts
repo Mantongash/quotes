@@ -36,11 +36,11 @@ export class QuoteComponent implements OnInit {
     this.likeCounter++;
   }
 
-  deleteQuote(complete:boolean) {
-    this.isComplete.emit(complete);
+  // deleteQuote(complete:boolean) {
+  //   this.isComplete.emit(complete);
       
     
-  }
+  // }
   constructor() {}
 
   ngOnInit() {}

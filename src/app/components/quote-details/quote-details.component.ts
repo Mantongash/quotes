@@ -10,6 +10,7 @@ import { Quote } from "../quote";
 export class QuoteDetailsComponent implements OnInit {
   @Input() quoteDetail: Quote;
   @Input() showDetails: boolean;
+
   
 
 

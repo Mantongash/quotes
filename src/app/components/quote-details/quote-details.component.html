@@ -1,1 +1,4 @@
-<p *ngIf="showDetails">Posted by: {{ quoteDetail.postedBy }}</p>
+<div *ngIf="showDetails">
+  <p>Posted by: {{ quoteDetail.postedBy }}</p>
+  <p>Likes: {{ quoteDetail.likes }}</p>
+</div>

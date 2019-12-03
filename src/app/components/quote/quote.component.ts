@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Quote } from "../quote";
+import { toUnicode } from "punycode";
 
 @Component({
   selector: "app-quote",
@@ -9,6 +10,8 @@ import { Quote } from "../quote";
 export class QuoteComponent implements OnInit {
   @Input() quote: Quote;
   @Input() showDetails: boolean;
+  @Output() isComplete = new EventEmitter<boolean>();
+  // @Output() quote: Quote
   linkName: string = "Show Details";
 
   toggleDetails() {
@@ -18,8 +21,25 @@ export class QuoteComponent implements OnInit {
       : (this.linkName = "Show Details");
   }
 
-  deleteQuote() {
-    console.log("Deleted");
+  // Like Counter
+
+  likeCounter: number = 0;
+  dislikeCounter: number = 0;
+  // likes: number = this.quote.like;
+  // maxVote = [];
+
+  dislikeClick() {
+    this.dislikeCounter++;
+  }
+
+  likeClick() {
+    this.likeCounter++;
+  }
+
+  deleteQuote(complete:boolean) {
+    this.isComplete.emit(complete);
+      
+    
   }
   constructor() {}
 

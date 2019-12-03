@@ -15,6 +15,7 @@ export class AddQuoteComponent implements OnInit {
 
   submittedQuote() {
     this.addedQuote.emit(this.newQuote);
+    
     // this.submitQuote.reset()
   }
   // formatQuote() {

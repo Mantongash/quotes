@@ -36,22 +36,20 @@ Lite Quotes is a web app where anybody can upload their quotes. Other users can 
    - INPUT: "User's Name"
    - INPUT: "A Quote"
    -  INPUT: "Quote Author"
-   - OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
-2. Displays an Error Message if Date Input Left Blank
+   - OUTPUT: "Adds the quote on the page"
+2. Displays an Error Message if form input fields leeft blank
    - INPUT: ""
    - OUTPUT: "Displays Error Message"
-3. Displays an Error Message if Gender Not Chosen
-   - INPUT: "" 
-   - OUTPUT: "Display an Error Message" 
-4. Clears Form and Reset the Message on Click
-   - INPUT: "Click Reset Button" 
-   - OUTPUT: "Clears and Resets the Form"
+3. Displays an upvote or downvote
+   - INPUT: "Click on upvote/downvote icon" 
+   - OUTPUT: "Show the number of upvotes and/or downvotes" 
+
 
 ## Development
 
-Want to contribute? Great!
+We love  contributors
 
-To fix a bug or enhance an existing module, follow these steps:
+To fix a bug or enhance an existing feature, follow these steps:
 - Fork the repo
 - Create a new branch (git checkout -b improve-feature)
 - Make the appropriate changes in the files
@@ -61,19 +59,12 @@ To fix a bug or enhance an existing module, follow these steps:
 - Create a Pull Request
 
 
-## Known Bugs
-
-If you find a bug (the website couldn't handle the query and or gave undesired results), kindly open an issue here by including your search query and the expected result.
-
-If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
-
-
 ##### Link to Live Site : [https://yomzsamora.github.io/Akan-Names/](https://yomzsamora.github.io/Akan-Names/)
 
 ### License
 
 *MIT*
-Copyright (c) 2019 **Yommie Samora**
+Copyright (c) 2019 **Anthony Ng'ang'a**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
